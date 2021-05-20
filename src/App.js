@@ -14,6 +14,12 @@ import img7 from './images/img7.png';
 import img8 from './images/img8.png';
 import img9 from './images/img9.png';
 import mainlogo from './images/mainlogo.svg';
+import mockup1 from './images/mockup1.jpeg';
+import mockup2 from './images/mockup2.jpeg';
+import mockup3 from './images/mockup3.jpeg';
+import mockup4 from './images/mockup4.jpeg';
+import mockup5 from './images/mockup5.jpeg';
+import mockup6 from './images/mockup6.jpeg';
 import urlvideo from './images/url-video.webp';
 import video from './videos/main-banner-video.mp4';
 import videotemplate from './videos/videoTemplate.webm';
@@ -102,6 +108,27 @@ const buttonStyle = css`
   }
 `;
 
+const largeButton = css`
+  font-size: 14px;
+  font-family: 'Metropolis', 'sans-serif';
+  color: #fff;
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  padding: 25px 25px;
+  letter-spacing: 1px;
+  background-color: #28304e;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  :hover {
+    background-color: #161a2b;
+  }
+`;
+
 const divWrapper = css`
   max-width: 100vw;
   overflow: hidden;
@@ -159,7 +186,7 @@ const backgroundLibrary = css`
   color: #28304e;
   font-size: 12px;
   margin-left: 266px;
-  margin-top: 200px;
+  margin-top: 250px;
   letter-spacing: 0.5px;
   font-size: 25px;
 
@@ -175,17 +202,78 @@ const backgroundLibrary = css`
   }
 `;
 
-const containerTemplates = css`
-  display: grid;
-  align-content: center;
+const flexWrapper = css`
+  display: flex;
   justify-content: center;
-  grid-template-columns: repeat(4, 300px);
-  grid-gap: 20px;
+`;
+
+const containerTemplate = css`
+  width: 300px;
+  margin-left: 18px;
 `;
 
 const gridImages = css`
+  margin-bottom: 18px;
   width: 100%;
   border-radius: 5px;
+`;
+
+const showCase = css`
+  display: flex;
+  justify-content: center;
+  background-color: #bad4e2;
+  font-family: 'Metropolis', 'sans-serif';
+  color: #28304e;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-top: 100px;
+  letter-spacing: 0.5px;
+  font-size: 25px;
+
+  > h1 {
+    font-size: 48px;
+    font-weight: 900;
+    max-width: 700px;
+    width: 100vw;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.5em;
+    max-width: 900px;
+  }
+`;
+
+const mockupContainer = css`
+  display: flex;
+  justify-content: center;
+`;
+const mockupContainerElement = css`
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+`;
+
+const mockupContainerImage = css`
+  display: flex;
+  justify-content: center;
+`;
+
+const mockupContainerHeading = css`
+  display: flex;
+  justify-content: center;
+
+  > h1 {
+    font-size: 20px;
+    color: #28304e;
+  }
+`;
+
+const mockupContainerText = css`
+  > p {
+    font-size: 14px;
+    color: #28304e;
+  }
 `;
 
 function App() {
@@ -251,43 +339,106 @@ function App() {
             items.
           </p>
         </section>
-        <section css={containerTemplates}>
-          <div>
-            <img css={gridImages} src={img1} alt="template" />
+        <div css={flexWrapper}>
+          <section css={containerTemplate}>
+            <div>
+              <img css={gridImages} src={img1} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img2} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img3} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img4} alt="template" />
+            </div>
+          </section>
+          <section css={containerTemplate}>
+            <div>
+              <img css={gridImages} src={img5} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img6} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img7} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img8} alt="template" />
+            </div>
+          </section>
+          <section css={containerTemplate}>
+            <div>
+              <img css={gridImages} src={img9} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img10} alt="template" />
+            </div>
+            <div>
+              <img css={gridImages} src={img11} alt="template" />
+            </div>
+            <div>
+              {' '}
+              <video
+                css={gridImages}
+                src={videotemplate}
+                autoplay="true"
+                muted
+                loop
+              >
+                <track
+                  src="captions_en_2.vtt"
+                  kind="captions"
+                  srclang="en"
+                  label="english_captions"
+                />
+              </video>
+            </div>
+          </section>
+        </div>
+
+        <button css={largeButton}>Browse all templates</button>
+
+        <section css={showCase}>
+          <h1>Build your own mockup scene, showcase your designs better</h1>
+        </section>
+        <section>
+          <div css={mockupContainer}>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup1} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>T-Shirt Mockup Templates</h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  Create high-quality t-shirt mockups in your browser. Various
+                  shirt mockups in different shapes and colors waiting for your
+                  designs to be replaced.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img css={gridImages} src={img2} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img3} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img4} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img5} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img6} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img7} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img8} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img9} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img10} alt="template" />
-          </div>
-          <div>
-            <img css={gridImages} src={img11} alt="template" />
+          <div css={mockupContainerElement}>
+            <div css={mockupContainerImage}>
+              <img src={mockup2} alt="" />
+            </div>
+            <div css={mockupContainerHeading}>
+              <h1>Screen And App Mockup Templates</h1>
+            </div>
+            <div css={mockupContainerText}>
+              <p>
+                Showcase your UI designs with our device mockups. You can find
+                iPhone mockups, iPad mockups, or any other devices to present
+                your designs.
+              </p>
+            </div>
           </div>
         </section>
-        <section></section>
       </main>
+
       <footer></footer>
     </>
   );
