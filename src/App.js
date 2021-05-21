@@ -253,6 +253,7 @@ const mockupContainer = css`
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
+  padding-bottom: 25px;
 `;
 const mockupContainerElement = css`
   flex-direction: column;
