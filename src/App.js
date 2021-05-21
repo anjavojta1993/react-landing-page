@@ -224,7 +224,6 @@ const showCase = css`
   background-color: #bad4e2;
   font-family: 'Metropolis', 'sans-serif';
   color: #28304e;
-  font-size: 12px;
   margin: 0 auto;
   margin-top: 100px;
   letter-spacing: 0.5px;
@@ -235,6 +234,7 @@ const showCase = css`
     font-weight: 900;
     max-width: 700px;
     width: 100vw;
+    padding-top: 50px;
     text-align: center;
   }
 
@@ -247,25 +247,40 @@ const showCase = css`
 const mockupContainer = css`
   display: flex;
   justify-content: center;
+  background-color: #bad4e2;
+  font-family: 'Metropolis', 'sans-serif';
+  color: #28304e;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
 `;
 const mockupContainerElement = css`
   flex-direction: column;
   display: flex;
   justify-content: center;
+  width: 270px;
+  margin-right: 40px;
 `;
 
 const mockupContainerImage = css`
   display: flex;
-  justify-content: center;
+
+  > img {
+    border-radius: 5px;
+    width: 270px;
+    height: 150px;
+    box-shadow: 0 7px 17px rgb(0 0 0 / 13%);
+  }
 `;
 
 const mockupContainerHeading = css`
   display: flex;
-  justify-content: center;
 
   > h1 {
     font-size: 20px;
+    font-weight: 900;
     color: #28304e;
+    line-height: 1.5em;
   }
 `;
 
@@ -273,6 +288,7 @@ const mockupContainerText = css`
   > p {
     font-size: 14px;
     color: #28304e;
+    line-height: 1.5em;
   }
 `;
 
@@ -410,7 +426,10 @@ function App() {
                 <img src={mockup1} alt="" />
               </div>
               <div css={mockupContainerHeading}>
-                <h1>T-Shirt Mockup Templates</h1>
+                <h1>
+                  T-Shirt Mockup <br />
+                  Templates
+                </h1>
               </div>
               <div css={mockupContainerText}>
                 <p>
@@ -420,20 +439,89 @@ function App() {
                 </p>
               </div>
             </div>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup2} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>Screen And App Mockup Templates</h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  Showcase your UI designs with our device mockups. You can find
+                  iPhone mockups, iPad mockups, or any other devices to present
+                  your designs.
+                </p>
+              </div>
+            </div>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup3} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>Book And Magazine Mockup Templates</h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  See your book cover design in real-life with our book mockups.
+                  Put your own designs on pages and import related items to your
+                  scene.
+                </p>
+              </div>
+            </div>
           </div>
-          <div css={mockupContainerElement}>
-            <div css={mockupContainerImage}>
-              <img src={mockup2} alt="" />
+        </section>
+        <section>
+          <div css={mockupContainer}>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup4} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>
+                  Website Mockup <br />
+                  Templates
+                </h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  Customize computer or device screen with your own website
+                  design, and create amazing website mockups for presentation or
+                  for your portfolio.
+                </p>
+              </div>
             </div>
-            <div css={mockupContainerHeading}>
-              <h1>Screen And App Mockup Templates</h1>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup5} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>Business Card Mockup Templates</h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  Customize business card mockup items and create your amazing
+                  branding design presentation in minutes right in your browser.
+                </p>
+              </div>
             </div>
-            <div css={mockupContainerText}>
-              <p>
-                Showcase your UI designs with our device mockups. You can find
-                iPhone mockups, iPad mockups, or any other devices to present
-                your designs.
-              </p>
+            <div css={mockupContainerElement}>
+              <div css={mockupContainerImage}>
+                <img src={mockup6} alt="" />
+              </div>
+              <div css={mockupContainerHeading}>
+                <h1>
+                  Poster Mockup <br />
+                  Templates
+                </h1>
+              </div>
+              <div css={mockupContainerText}>
+                <p>
+                  Create amazing poster mockups with our amazing collection of
+                  templates. Easily place your poster design to frames and
+                  create your own environment.
+                </p>
+              </div>
             </div>
           </div>
         </section>
