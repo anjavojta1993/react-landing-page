@@ -216,6 +216,7 @@ const gridImages = css`
   margin-bottom: 18px;
   width: 100%;
   border-radius: 5px;
+  border: 1px solid #e9ebee;
 `;
 
 const showCase = css`
