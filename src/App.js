@@ -63,7 +63,7 @@ const navbarStyles = css`
   }
 `;
 
-const Introduction = css`
+const introduction = css`
   font-family: 'Metropolis', 'sans-serif';
   color: #28304e;
   font-size: 12px;
@@ -322,24 +322,24 @@ function App() {
             </div>
           </div>
         </header>
-        <section css={Introduction}>
+        <section css={introduction}>
           <h1>The best online mockup generator</h1>
           <p>
             Design, animate and present your projects with an extensive library
             of mockups right inside the browser with your team.
           </p>
-          <button css={buttonStyle} onClick="https://app.artboard.studio/login">
+          <button css={buttonStyle}>
             Get started for free
           </button>
           <span>No credit cards required</span>
         </section>
         <div css={videoContainer}>
           <img css={urlVideo} src={urlvideo} alt="browser url video" />
-          <video css={videoStyle} src={video} autoplay="true" muted loop>
+          <video css={videoStyle} src={video} autoPlay={true} muted loop>
             <track
               src="captions_en.vtt"
               kind="captions"
-              srclang="en"
+              srcLang="en"
               label="english_captions"
             />
           </video>
@@ -402,14 +402,14 @@ function App() {
               <video
                 css={gridImages}
                 src={videotemplate}
-                autoplay="true"
+                autoPlay={true}
                 muted
                 loop
               >
                 <track
                   src="captions_en_2.vtt"
                   kind="captions"
-                  srclang="en"
+                  srcLang="en"
                   label="english_captions"
                 />
               </video>
