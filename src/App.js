@@ -328,9 +328,7 @@ function App() {
             Design, animate and present your projects with an extensive library
             of mockups right inside the browser with your team.
           </p>
-          <button css={buttonStyle}>
-            Get started for free
-          </button>
+          <button css={buttonStyle}>Get started for free</button>
           <span>No credit cards required</span>
         </section>
         <div css={videoContainer}>
