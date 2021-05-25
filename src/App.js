@@ -530,7 +530,7 @@ function App() {
         </section>
       </main>
 
-      <footer></footer>
+      <footer />
     </>
   );
 }
