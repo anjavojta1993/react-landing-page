@@ -59,6 +59,7 @@ const navbarStyles = css`
     font-weight: bold;
     font-size: 12px;
     margin-left: 50px;
+    overflow: hidden;
   }
 `;
 
